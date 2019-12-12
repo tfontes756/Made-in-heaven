@@ -23,5 +23,6 @@ int main(int argc, char** argv) {
 
     cout << "Le monde est mien." << endl;
     cout << "Le Rouleau compresseur est kawaii" << endl;
+    cout << "Yamete Kudasai" <<endl;
     return 0;
 }
