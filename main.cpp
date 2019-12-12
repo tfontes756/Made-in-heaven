@@ -22,9 +22,11 @@ using namespace std;
 int main(int argc, char** argv) {
 
     cout << "Le monde est mien." << endl;
+    cout << "Le saint rouleau" << endl;
     cout << "Le Rouleau compresseur est kawaii" << endl;
     cout << "Yamete Kudasai" <<endl;
     cout <<"omae mo shindeiru"<<endl;
     cout <<"NANIIIIII"<<endl;
+
     return 0;
 }
