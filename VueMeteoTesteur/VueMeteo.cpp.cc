@@ -6,9 +6,9 @@
 
 /*
  * File:   VueMeteo.cpp
- * Author: snir2g2
+ * Author: snir2g1
  *
- * Created on 19 décembre 2019, 15:04
+ * Created on 19 décembre 2019, 16:30
  */
 
 #include "VueMeteo.h"
@@ -19,3 +19,12 @@ VueMeteo::VueMeteo() {
 
 VueMeteo::~VueMeteo() {
 }
+
+void VueMeteo::mettreAJour() { 
+    
+    widget.vitesseVent->setText("50");
+    widget.temperature->setText("30");
+    
+}
+
+

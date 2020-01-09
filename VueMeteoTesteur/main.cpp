@@ -6,20 +6,23 @@
 
 /*
  * File:   main.cpp
- * Author: snir2g2
+ * Author: snir2g1
  *
- * Created on 19 décembre 2019, 14:56
+ * Created on 19 décembre 2019, 16:30
  */
 
 #include <QApplication>
+
+#include "VueMeteo.h"
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
     // Q_INIT_RESOURCE(resfile);
 
     QApplication app(argc, argv);
-
-    // create and show your widgets here
+    VueMeteo *Meteo= new VueMeteo();
+    Meteo->mettreAJour();        
+    Meteo->show();
 
     return app.exec();
 }

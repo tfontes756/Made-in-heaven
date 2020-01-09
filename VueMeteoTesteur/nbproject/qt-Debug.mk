@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = VueMeteoTesteur1.0.0
-DISTDIR = /home/snir2g2/NetBeansProjects/ProjetSerre_ilot8/VueMeteoTesteur/build/Debug/GNU-Linux/VueMeteoTesteur1.0.0
+DISTDIR = /home/snir2g1/Bureau/VueMeteoTesteur/build/Debug/GNU-Linux/VueMeteoTesteur1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/opt/Qt/5.7/gcc_64/lib
 LIBS          = $(SUBLIBS) -L/opt/Qt/5.7/gcc_64/lib -lQt5Widgets -L/usr/lib64 -lQt5Gui -lQt5Core -lGL -lpthread 
@@ -713,7 +713,7 @@ moc_VueMeteo.cpp: ui_VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
 		VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/bin/moc
-	/opt/Qt/5.7/gcc_64/bin/moc $(DEFINES) -I/opt/Qt/5.7/gcc_64/mkspecs/linux-g++ -I/home/snir2g2/NetBeansProjects/ProjetSerre_ilot8/VueMeteoTesteur/nbproject -I/opt/Qt/5.7/gcc_64/include -I/opt/Qt/5.7/gcc_64/include/QtWidgets -I/opt/Qt/5.7/gcc_64/include/QtGui -I/opt/Qt/5.7/gcc_64/include/QtCore -I. -I/usr/include/c++/6.1.1 -I/usr/include/c++/6.1.1/x86_64-redhat-linux -I/usr/include/c++/6.1.1/backward -I/usr/lib/gcc/x86_64-redhat-linux/6.1.1/include -I/usr/local/include -I/usr/include VueMeteo.h -o moc_VueMeteo.cpp
+	/opt/Qt/5.7/gcc_64/bin/moc $(DEFINES) -I/opt/Qt/5.7/gcc_64/mkspecs/linux-g++ -I/home/snir2g1/Bureau/VueMeteoTesteur/nbproject -I/opt/Qt/5.7/gcc_64/include -I/opt/Qt/5.7/gcc_64/include/QtWidgets -I/opt/Qt/5.7/gcc_64/include/QtGui -I/opt/Qt/5.7/gcc_64/include/QtCore -I. -I/usr/include/c++/6.1.1 -I/usr/include/c++/6.1.1/x86_64-redhat-linux -I/usr/include/c++/6.1.1/backward -I/usr/lib/gcc/x86_64-redhat-linux/6.1.1/include -I/usr/local/include -I/usr/include VueMeteo.h -o moc_VueMeteo.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -985,7 +985,51 @@ build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApp
 		/opt/Qt/5.7/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qguiapplication.h \
-		/opt/Qt/5.7/gcc_64/include/QtGui/qinputmethod.h
+		/opt/Qt/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		VueMeteo.h \
+		ui_VueMeteo.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/QVariant \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QAction \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qaction.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qicon.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGroupBox \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qgroupbox.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qframe.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QHBoxLayout \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qgridlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qvalidator.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qslider.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QLabel \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QLineEdit \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QVBoxLayout \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/main.o main.cpp
 
 build/Debug/GNU-Linux/moc_VueMeteo.o: moc_VueMeteo.cpp 
