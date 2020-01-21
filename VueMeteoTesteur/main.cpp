@@ -1,31 +1,20 @@
-<<<<<<< HEAD
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   main.cpp
- * Author: snir2g1
- *
- * Created on 19 décembre 2019, 16:30
- */
-=======
->>>>>>> f2a6ae15a0631957d5768e012a30f0747b3b5723
-
 #include <QApplication>
 
 #include "VueMeteo.h"
 
 int main(int argc, char *argv[]) {
-    // initialize resources, if needed
-    // Q_INIT_RESOURCE(resfile);
-
     QApplication app(argc, argv);
-    VueMeteo *Meteo= new VueMeteo();
-    Meteo->mettreAJour();        
-    Meteo->show();
+
+
+    
+    
+    BulletinMeteo *BatmanMeteo = new BulletinMeteo();
+    VueMeteo *JokerMeteo = new VueMeteo(BatmanMeteo);
+    JokerMeteo->show();
+    
+    BatmanMeteo->setVitesseVent(84);
+    BatmanMeteo->setTemperature(37);
+    
 
     return app.exec();
 }
